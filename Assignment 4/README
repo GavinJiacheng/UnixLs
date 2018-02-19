@@ -1,0 +1,12 @@
+﻿Question 1:
+The address 11123456 in binary form is 0001 0001 0001 0010 0011 0100 0101 0110. The page size is 4096 = 2^12. So, the low order 12 bits 0100 0101 0110 represent the displacement into the page, and the high order 32-12=20 bits 0001 0001 0001 0010 0011 are for the page number. The offset bits can represent the physical page number for the physical address. 
+
+Question 2:
+Eff. Acc. Time = p*(page fault time)+(1-p)*ma.
+Page fault time here = 100+(1-70%)*8,000,000+70%*20,000,000 = 100 + 2,400,000+14,000,000=16,400,100.
+So, EAT = 16,400,100p+100-100p
+	  = 16,400,000p+100
+	  = 200
+So, 16,400,000p = 100,
+              p = 100/16,400,000 = 1/160,400.
+
